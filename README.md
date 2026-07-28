@@ -11,7 +11,9 @@ The scRNA-seq data was obtained from:
 
 
 
-Additional files were obtained from:
+
+
+**Additional files were obtained from:**
 
 DatabaseExtract_v_1.01.csv
 
