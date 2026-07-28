@@ -1,0 +1,7 @@
+"regulon","avg_log2FC","pval","gene","p_val_adj","sig"
+"MYB(+)",1.19147879413846,0,"MYB",0,"Upregulated in Activated Stressed NK"
+"ATF3(+)",1.04467133986265,0,"ATF3",0,"Upregulated in Activated Stressed NK"
+"SNAI1(+)",1.02313610206565,0,"SNAI1",0,"Upregulated in Activated Stressed NK"
+"NR4A1(+)",1.02285901747135,0,"NR4A1",0,"Upregulated in Activated Stressed NK"
+"ASCL2(+)",-1.19694446116498,0,"ASCL2",0,"Upregulated in Mature Cytotoxic NK"
+"FOXD2(+)",-1.01187474806457,1.02954524502192e-50,"FOXD2",6.83176809018114e-50,"Upregulated in Mature Cytotoxic NK"
