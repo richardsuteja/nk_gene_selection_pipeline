@@ -1,5 +1,9 @@
 # ADAPT-NK Target Screening Pipeline
 
+This repository is used by Richard Suteja as a portfolio to supplement a
+PhD concept note. Richard Suteja did not own any of the primary data used
+in this analysis
+
 ## Pipeline Flow
 
 **[VALIDATION]** steps contextualize the target-selection. The final
