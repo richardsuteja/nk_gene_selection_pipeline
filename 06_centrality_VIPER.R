@@ -39,16 +39,6 @@ COL_NS   <- "grey80"
 # =============================================================================
 #  SECTION 1: Build Directed Weighted Graph Based on Filtered pySCENIC GRN
 # =============================================================================
-# GRNBoost2 fits a separate regression model per target gene, so raw
-# `importance` values aren't on a comparable scale across different targets
-# (see aertslab/arboreto #25) -- a single flat cutoff like `>= 0.01` is
-# therefore stricter for some targets than others in a way that's invisible
-# downstream. Filtering to the top 10 TFs per target instead ranks within
-# each target's own regression, avoiding that cross-target comparability
-# problem. This also matches "top10perTarget", one of pySCENIC's own default
-# threshold methods in modules_from_adjacencies() (03_pyscenic.ipynb, Cell 6)
-# -- i.e. an established convention already used elsewhere in this pipeline,
-# not an invented number.
 
 adjacencies_pyscenic <- read.csv("checkpoint/S03_adjacencies.csv",
                                stringsAsFactors = FALSE) %>%
@@ -251,7 +241,7 @@ plot_VIPER_scatter <- ggplot2::ggplot(df_scatter_VIPER,
     ggplot2::aes(label = gene, colour = point_col),
     size = 2.5, max.overlaps = Inf, show.legend = FALSE,
     segment.size = 0.3, segment.alpha = 0.6, box.padding = 0.6,
-    seed = 42, force = 10
+    seed = 42, force = 25
   ) +
   ggplot2::labs(
     title    = "VIPER-Selected amiRNA Candidates",
